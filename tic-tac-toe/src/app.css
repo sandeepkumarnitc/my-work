@@ -1,0 +1,34 @@
+
+.mainLayout {
+  width: 400px;
+}
+
+.header {
+  background: blue;
+  padding: 10px;
+  box-shadow: 5px 5px 5px black;
+  text-align: center;
+}
+
+.container {
+  background-color: lightyellow;
+  box-shadow: 5px 5px 5px black;
+  padding: 10px;
+  
+}
+
+/*.gameLayout {
+  border-color: orange;
+  padding-left:30%;
+}
+
+.gameBoard {
+  border: green;
+}*/
+
+#gameTable tbody tr{
+  border-color: brown !important;
+  border-width: 2px;
+}
+
+
