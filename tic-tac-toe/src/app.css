@@ -1,34 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 
-.mainLayout {
-  width: 400px;
+
+.header{
+    background-color:lightgreen;
+    padding:10px;
+    box-shadow: 5px 5px 5px black;
+    
+}
+.header h1{   
+    text-shadow: -5px -5px 5px gray;
 }
 
-.header {
-  background: blue;
-  padding: 10px;
-  box-shadow: 5px 5px 5px black;
-  text-align: center;
+.header h1 a{
+    color: purple;
+    text-decoration: none;
+}
+.nav li{
+    display:inline;    
+    padding-right:10px;
+}
+.nav li a{
+    color:purple;
+    text-decoration: none;
 }
 
-.container {
-  background-color: lightyellow;
-  box-shadow: 5px 5px 5px black;
-  padding: 10px;
-  
+.app{
+    width:300px;
 }
 
-/*.gameLayout {
-  border-color: orange;
-  padding-left:30%;
+.container{
+    padding-top:20px;
 }
 
-.gameBoard {
-  border: green;
-}*/
-
-#gameTable tbody tr{
-  border-color: brown !important;
-  border-width: 2px;
+.game{
+    width:300px;
+    border:2px solid orange;
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.status-message{
+    font-family: 'Shadows Into Light', cursive;
+    text-align:center;
+}
 
+.board{
+    width:240px;
+    /*border: 5px solid greenyellow;*/
+}
+
+.cell{
+    /*font-family: 'Shadows Into Light', cursive;*/
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3em;
+    width:80px;
+    height:80px;
+    background-color:white;
+    border:1px solid brown;
+}
+
+.cell:nth-child(-n+3){
+    border-top: none;
+}
+
+.cell:nth-child(3n-2){
+    border-left: none;
+}
+
+.cell:nth-child(3n){
+    border-right: none;
+}
+
+.cell:nth-child(n+7){
+    border-bottom: none;
+}
+
+.reset-button{    
+    background-color: crimson;   
+    color:white;
+    width:120px;
+    height:40px;
+    margin:5px;
+}
