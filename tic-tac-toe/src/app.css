@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Shadows+Into+Light&display=swap');
 
+@font-face {
+    font-family: digital;
+    src: url(http://localhost:3000/fonts/digital-7.ttf);
+}
 
 .header{
     background-color:lightgreen;
@@ -51,6 +55,7 @@
     /*border: 5px solid greenyellow;*/
 }
 
+
 .cell{
     /*font-family: 'Shadows Into Light', cursive;*/
     font-family: 'Permanent Marker', cursive;
@@ -61,20 +66,20 @@
     border:1px solid brown;
 }
 
-.cell:nth-child(-n+3){
-    border-top: none;
-}
-
-.cell:nth-child(3n-2){
-    border-left: none;
+.cell:nth-child(-n + 3){
+    border-top:none;
 }
 
 .cell:nth-child(3n){
-    border-right: none;
+    border-right:none;
 }
 
-.cell:nth-child(n+7){
-    border-bottom: none;
+.cell:nth-child(3n - 2){
+    border-left:none;
+}
+
+.cell:nth-child(n + 7){
+    border-bottom:none;
 }
 
 .reset-button{    
@@ -83,4 +88,34 @@
     width:120px;
     height:40px;
     margin:5px;
+}
+
+.timer{
+    background-color:black;
+    color:white;
+    display:flex;
+    min-width: 100px;
+    align-items:center;
+    flex-direction:column;
+    border: 1px solid black;
+    padding:5px;
+    border-radius: 20px;
+    margin:10px;
+}
+
+.timer p{
+    font-family: digital;
+    font-size:30px;
+    margin:10px;
+}
+.timer button{
+    margin:5px;
+}
+
+.clocks{
+    display:flex;
+}
+
+.moves{
+    border:1px solid blue;
 }

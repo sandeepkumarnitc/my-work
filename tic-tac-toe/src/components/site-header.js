@@ -1,12 +1,17 @@
 import React from 'react';
+import {SiteTitle} from './site-title';
 
-const SiteHeader = function(props){
-    const styles ={color:props.color || "blue"}
+const component=function(props){
+
+   // console.log('args',props);
+    const titleStyle={color: props.color || "black"};
+
     return (
-        <div className="header" color={props.color}>
-            <h1 style={styles}>{props.title}</h1>
+        <div className="header" >    
+            <SiteTitle style={titleStyle}>{props.title} </SiteTitle>           
         </div>
     );
-}
 
-export default SiteHeader;
+} ;
+
+export default component;

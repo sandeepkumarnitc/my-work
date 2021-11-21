@@ -1,16 +1,21 @@
 import React from 'react';
-import OnlyHeader from './components/site-header'
-import GameLayout from './components/game-layout';
+import './app.css';
+import SiteHeader from './components/site-header';
+import Game from './components/game';
 
 export default class App extends React.Component{
+
     render(){
-        return(
-            <div className="mainLayout">
-                <div><OnlyHeader title="Tic Tac Toe" color="white"/></div>
+        return (
+            <div className="app">
+                <SiteHeader title="Tic Tac Toe" color="black" size={20} />
+        
                 <div className="container">
-                    <GameLayout/>
+                   <Game/>
+                   
                 </div>
             </div>
+        
         );
     }
 }
