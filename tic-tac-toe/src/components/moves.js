@@ -10,10 +10,19 @@ const Moves = function(props) {
                     <td>Number</td><td>Player</td><td>Position</td>
                 </tr>
                 
-                    {props.movesBoard.map(
-                        move => <tr><td>{move[0]}</td><td>{move[1]}</td><td>{move[2]}</td></tr>
+                    {props.movesBoard.map( move =>
+                        <tr><td>
+                                {move.index}
+                            </td>
+                            <td>
+                                {move.player}
+                            </td>
+                            <td>
+                                {move.position}
+                            </td>
+                        </tr>
                     )}
-                    <td>{props.movesBoard[0][1]}</td><td>{props.movesBoard[0][1]}</td><td>{props.movesBoard[0][2]}</td>
+                    
                 
                 </tbody>
             </table>
@@ -22,3 +31,6 @@ const Moves = function(props) {
 }
 
 export default Moves;
+
+//move => <tr><td>{move[0]}</td><td>{move[1]}</td><td>{move[2]}</td></tr>
+//<td>{props.movesBoard[0][1]}</td><td>{props.movesBoard[0][1]}</td><td>{props.movesBoard[0][2]}</td>

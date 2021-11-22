@@ -26,7 +26,7 @@ class Game extends React.Component {
             gameNumber:0,
             
             movesBoard : [
-                
+                []
             ]
         };
     }
@@ -80,8 +80,7 @@ class Game extends React.Component {
         this.setState({gameNumber:this.state.gameNumber+1})
 
         const movesScore = [...this.state.movesBoard]
-        //movesScore.push([this.state.gameNumber+1,this.state.next,id+1])
-        movesScore.push({index:this.state.gameNumber+1,player:this.state.next,position:id+1})
+        movesScore.push([this.state.gameNumber+1,this.state.next,id+1])
         this.setState({movesBoard:movesScore});
         
         this.setState({cells:cells});
